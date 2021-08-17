@@ -12,6 +12,34 @@ const Coin = ({
 }) => {
   return (
     <div className="coin-container">
+      <table class="flex-table">
+        <tbody>
+          <tr>
+            <td>
+              <img src={image} alt="crypto" className="coin__image" />
+            </td>
+            <td>{name}</td>
+            <td className="coin-symbol">{symbol}</td>
+            <td> ${price}</td>
+            <td>${volume.toLocaleString()}</td>
+
+            {priceChange < 0 ? (
+              <td className="coin-percent red">{priceChange.toFixed(2)}%</td>
+            ) : (
+              <td className="coin-percent green">{priceChange.toFixed(2)}%</td>
+            )}
+            <td> Mkt Cap: ${marketcap.toLocaleString()}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  );
+};
+
+export default Coin;
+
+/*
+ <div className="coin-container">
       <div className="coin-row">
         <div className="coin">
           <img src={image} alt="crypto" className="coin__image" />
@@ -34,7 +62,4 @@ const Coin = ({
         </div>
       </div>
     </div>
-  );
-};
-
-export default Coin;
+*/
