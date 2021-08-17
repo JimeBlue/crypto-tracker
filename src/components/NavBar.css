@@ -1,0 +1,23 @@
+.navbar {
+  background-color: #000;
+}
+.navbar__brand-right {
+  color: #ed462f;
+  font-weight: bold;
+}
+
+.navbar__brand-left {
+  color: #11cc9e;
+  font-weight: bold;
+}
+
+.navbar__link {
+  color: #11cc9e;
+  font-weight: bold;
+}
+
+/*
+style={{ color: '#e53e3e' }}
+style={{ color: '#6377e7' }}
+variant="dark"
+bg="dark" */

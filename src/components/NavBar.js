@@ -1,11 +1,12 @@
 import React from 'react';
 import { Navbar, Nav } from 'react-bootstrap';
 import { LinkContainer } from 'react-router-bootstrap';
+import './NavBar.css';
 
 const NavBar = () => {
   return (
     <div>
-      <Navbar bg="light" expand="lg" variant="light">
+      <Navbar expand="lg" className="navbar">
         <Navbar.Brand href="#home">
           <img
             alt=""
@@ -14,24 +15,25 @@ const NavBar = () => {
             height="30"
             className="d-inline-block align-top"
           />{' '}
-          Covid-19 <span style={{ color: '#e53e3e' }}>Tracker</span>
+          <span className="navbar__brand-right">Crypto</span>{' '}
+          <span className="navbar__brand-left">Tracker</span>
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ml-auto">
             <LinkContainer to="/">
               <Nav.Link>
-                <span style={{ color: '#6377e7' }}>Home</span>
+                <span className="navbar__link">Home</span>
               </Nav.Link>
             </LinkContainer>
             <LinkContainer to="/Profitability">
               <Nav.Link>
-                <span style={{ color: '#6377e7' }}>Profitability</span>
+                <span className="navbar__link">Profitability</span>
               </Nav.Link>
             </LinkContainer>
             <LinkContainer to="/DerivativeExchanges">
               <Nav.Link>
-                <span style={{ color: '#6377e7' }}>Derivative Exchanges</span>
+                <span className="navbar__link">Derivative Exchanges</span>
               </Nav.Link>
             </LinkContainer>
           </Nav>
