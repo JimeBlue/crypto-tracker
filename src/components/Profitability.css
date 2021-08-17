@@ -1,0 +1,14 @@
+.profit__card {
+  min-width: 18rem;
+
+  margin: 0 auto;
+  border: 0;
+}
+
+.profit__bar,
+.profit__line {
+  padding: 0.5rem;
+}
+/*
+style={{ minWidth: '18rem', maxWidth: '1200px' }}
+*/

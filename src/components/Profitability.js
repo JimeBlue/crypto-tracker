@@ -67,44 +67,45 @@ const Profitability = () => {
   }, []);
 
   return (
-    <Card style={{ minWidth: '18rem', maxWidth: '1200px' }}>
+    <Card className="profit__card">
       <Card.Body>
         <Card.Title>Card Title</Card.Title>
-        <div>
-          <Bar
-            data={barData}
-            options={{
-              plugins: {
-                title: {
-                  display: true,
-                  text: 'Cryptocurrency Market Capital',
-                },
-                legend: {
-                  display: true,
-                  position: 'bottom',
-                },
+
+        <Bar
+          className="profit__bar"
+          data={barData}
+          options={{
+            plugins: {
+              title: {
+                display: true,
+                text: 'Cryptocurrency Market Capital',
               },
-            }}
-          />
-        </div>
+              legend: {
+                display: true,
+                position: 'bottom',
+              },
+            },
+          }}
+        />
+
         <Card.Title>Card Title</Card.Title>
-        <div>
-          <Line
-            data={lineData}
-            options={{
-              plugins: {
-                title: {
-                  display: true,
-                  text: 'Cryptocurrency Price Change Percentage in 24h',
-                },
-                legend: {
-                  display: true,
-                  position: 'bottom',
-                },
+
+        <Line
+          className="profit__line"
+          data={lineData}
+          options={{
+            plugins: {
+              title: {
+                display: true,
+                text: 'Cryptocurrency Price Change Percentage in 24h',
               },
-            }}
-          />
-        </div>
+              legend: {
+                display: true,
+                position: 'bottom',
+              },
+            },
+          }}
+        />
       </Card.Body>
     </Card>
   );
