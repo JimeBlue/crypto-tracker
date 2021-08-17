@@ -6,7 +6,7 @@ import './NavBar.css';
 const NavBar = () => {
   return (
     <div>
-      <Navbar expand="lg" className="navbar">
+      <Navbar expand="lg" className="navbar" variant="dark">
         <Navbar.Brand href="#home">
           <img
             alt=""
@@ -18,7 +18,10 @@ const NavBar = () => {
           <span className="navbar__brand-right">Crypto</span>{' '}
           <span className="navbar__brand-left">Tracker</span>
         </Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Toggle
+          aria-controls="basic-navbar-nav"
+          className="navbar__toggle"
+        />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ml-auto">
             <LinkContainer to="/">
