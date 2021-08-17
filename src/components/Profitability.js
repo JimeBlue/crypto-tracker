@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import Card from 'react-bootstrap/Card';
 import { Bar, Line } from 'react-chartjs-2';
+import './Profitability.css';
 
 const Profitability = () => {
   const [barData, setBarData] = useState({});
@@ -66,7 +67,7 @@ const Profitability = () => {
   }, []);
 
   return (
-    <Card style={{ minWidth: '18rem' }}>
+    <Card style={{ minWidth: '18rem', maxWidth: '1200px' }}>
       <Card.Body>
         <Card.Title>Card Title</Card.Title>
         <div>
