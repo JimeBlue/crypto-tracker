@@ -69,7 +69,7 @@ const Profitability = () => {
   return (
     <Card className="profit__card">
       <Card.Body>
-        <Card.Title>Card Title</Card.Title>
+        <Card.Title>Profitability</Card.Title>
 
         <Bar
           className="profit__bar"
@@ -87,8 +87,6 @@ const Profitability = () => {
             },
           }}
         />
-
-        <Card.Title>Card Title</Card.Title>
 
         <Line
           className="profit__line"
