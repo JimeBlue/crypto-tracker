@@ -1,10 +1,37 @@
+import 'react-bootstrap/dist/react-bootstrap.min.js';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
+import NavBar from './components/NavBar';
+import Home from './components/Home';
+import Profitability from './components/Profitability';
+import DerivativeExchanges from './components/DerivativeExchanges';
+
+function App() {
+  return (
+    <div className="App">
+      <Router>
+        <NavBar></NavBar>
+        <Route exact path="/" component={Home}></Route>
+        <Route path="/profitability" component={Profitability}></Route>
+        <Route
+          exact
+          path="/DerivativeExchanges"
+          component={DerivativeExchanges}
+        ></Route>
+      </Router>
+    </div>
+  );
+}
+
+export default App;
+
+/*IMPORTS:
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import './App.css';
 import Coin from './components/Coin';
-
-function App() {
-  const [coins, setCoins] = useState([]);
+*/
+/*BEFORE RETURN
+const [coins, setCoins] = useState([]);
   const [search, setSearch] = useState('');
 
   useEffect(() => {
@@ -25,8 +52,11 @@ function App() {
     coin.name.toLowerCase().includes(search.toLowerCase())
   );
 
-  return (
-    <div className="coin-app">
+*/
+
+/*IN RETURN:
+
+<div className="coin-app">
       <div className="coin-search">
         <h1 className="coin-text">Search a currency</h1>
         <form>
@@ -53,7 +83,6 @@ function App() {
         );
       })}
     </div>
-  );
-}
 
-export default App;
+
+*/
