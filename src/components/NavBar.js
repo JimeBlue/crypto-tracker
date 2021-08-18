@@ -10,7 +10,7 @@ const NavBar = () => {
         <Navbar.Brand href="#home">
           <img
             alt=""
-            src="covid.png"
+            src="https://static.cex.io/landings/media/cex.svg"
             width="30"
             height="30"
             className="d-inline-block align-top"

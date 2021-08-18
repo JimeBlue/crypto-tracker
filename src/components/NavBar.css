@@ -3,22 +3,16 @@
 }
 
 .navbar__brand-right {
-  color: #ed462f;
+  color: #eee935;
   font-weight: bold;
 }
 
 .navbar__brand-left {
-  color: #11cc9e;
+  color: #00cccc;
   font-weight: bold;
 }
 
 .navbar__link {
-  color: #11cc9e;
+  color: #00cccc;
   font-weight: bold;
 }
-
-/*
-style={{ color: '#e53e3e' }}
-style={{ color: '#6377e7' }}
-variant="dark"
-bg="dark" */
