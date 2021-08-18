@@ -22,6 +22,10 @@
   padding: 0.5em;
 }
 
+.white {
+  color: #fff;
+}
+
 .coin__image {
   height: 30px;
   width: 30px;

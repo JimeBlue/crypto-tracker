@@ -1,5 +1,9 @@
-.home {
+/* .home {
   background-color: #fff;
+} */
+
+* {
+  background-color: #000;
 }
 .coin-search-container {
   display: flex;
