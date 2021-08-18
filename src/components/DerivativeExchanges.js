@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { MenuItem, FormControl, Select } from '@material-ui/core';
+import InfoBox from '../components/InfoBox';
 
 const DerivativeExchanges = () => {
   const [exchanges, setExchanges] = useState([]);
@@ -45,7 +46,9 @@ const DerivativeExchanges = () => {
           </Select>
         </FormControl>
       </div>
-      <div className="exchange__info-box"></div>
+      <div className="exchange__info-box">
+        <InfoBox name="Name of Derivative Exchanges" openInterest={212393.86} />
+      </div>
     </>
   );
 };
