@@ -5,10 +5,15 @@ import InfoBox from '../components/InfoBox';
 const DerivativeExchanges = () => {
   const [exchanges, setExchanges] = useState([]);
   const [exchange, setExchange] = useState('Select Exchange');
+  const [exchangeInfo, setExchangeInfo] = useState(
+    {}
+  ); /*for indivudual derivative exchange*/
 
   useEffect(() => {
     const getexchangesData = async () => {
-      fetch('https://api.coingecko.com/api/v3/derivatives/exchanges')
+      fetch(
+        'https://api.coingecko.com/api/v3/derivatives/exchanges?order=name_asc'
+      )
         .then((response) => response.json())
         .then((data) => {
           const exchanges = data.map((exchange) => ({
@@ -24,9 +29,14 @@ const DerivativeExchanges = () => {
 
   const onExchangeChange = (event) => {
     const exchangeId = event.target.value;
-    console.log('ACAAAA', exchangeId);
 
-    setExchange(exchangeId);
+    const url = `https://api.coingecko.com/api/v3/derivatives/exchanges/${exchangeId}`;
+    fetch(url)
+      .then((response) => response.json())
+      .then((data) => {
+        setExchange(exchangeId);
+        setExchangeInfo(data);
+      });
   };
 
   return (
@@ -47,7 +57,15 @@ const DerivativeExchanges = () => {
         </FormControl>
       </div>
       <div className="exchange__info-box">
-        <InfoBox name="Name of Derivative Exchanges" openInterest={212393.86} />
+        <InfoBox
+          name={exchangeInfo.name}
+          openInterest={exchangeInfo.open_interest_btc}
+          tradeVolume24h={exchangeInfo.trade_volume_24h_btc}
+          image={exchangeInfo.image}
+          yearEstablished={exchangeInfo.year_established}
+          description={exchangeInfo.description}
+          url={exchangeInfo.url}
+        />
       </div>
     </>
   );
@@ -110,3 +128,8 @@ const [exchange, setExchange] = useState('Select exchange');
       </FormControl>
     </div>
  */
+
+/* ESTE VA ARRIBA DE exchanges.map EN RETURN:
+
+    <MenuItem value="Select Exchange">Select Exchange</MenuItem>
+    */

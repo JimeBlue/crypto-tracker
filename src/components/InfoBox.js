@@ -2,12 +2,25 @@ import React, { useState, useEffect } from 'react';
 
 import Card from 'react-bootstrap/Card';
 
-const InfoBox = ({ name, openInterest }) => {
+const InfoBox = ({
+  name,
+  openInterest,
+  tradeVolume24h,
+  image,
+  yearEstablished,
+  description,
+  url,
+}) => {
   return (
     <Card className="profit__card">
       <Card.Body>
+        <Card.Img src={image} />
         <Card.Title>{name}</Card.Title>
-        <Card.Text>{openInterest} </Card.Text>
+        <Card.Text>Open Interest{openInterest}</Card.Text>
+        <Card.Text> Trade Volume 24h{tradeVolume24h}</Card.Text>
+        <Card.Text>Year Established {yearEstablished}</Card.Text>
+        <Card.Text>Description {description}</Card.Text>
+        <Card.Link href={url}>url</Card.Link>
       </Card.Body>
     </Card>
   );
