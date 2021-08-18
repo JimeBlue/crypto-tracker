@@ -1,7 +1,7 @@
 .flex-table {
   display: flex;
   flex-direction: column;
-  border: 1px solid #ccc;
+  border: 1px solid #fff; /*aca*/
   background: #fff;
   max-width: 1200px;
   margin: 0 auto;
@@ -15,7 +15,7 @@
   display: flex;
 }
 .flex-table tbody tr + tr {
-  border-top: 1px solid #ccc;
+  border-top: 1px solid #fff; /*aca*/
 }
 .flex-table thead tr th,
 .flex-table tbody tr td {
@@ -55,12 +55,12 @@
   .flex-table tbody tr {
     flex-direction: column;
     margin: 1em;
-    border: 1px solid #ccc;
+    border: 1px solid #fff; /*aca*/
   }
   .flex-table tbody tr td {
     flex-direction: column;
   }
   .flex-table tbody tr td + td {
-    border-top: 1px solid #ccc;
+    border-top: 1px solid #fff; /*aca*/
   }
 }
