@@ -1,14 +1,14 @@
 .flex-table {
   display: flex;
   flex-direction: column;
-  border: 1px solid #fff; /*aca*/
+  border-top: 0.05px solid #627489; /*aca*/
   background: #fff;
   max-width: 1200px;
   margin: 0 auto;
 }
 .flex-table thead {
   color: #fff;
-  background: #000;
+  background: #ff3a47;
 }
 .flex-table thead tr,
 .flex-table tbody tr {
@@ -24,8 +24,8 @@
   padding: 0.5em;
 }
 
-.white {
-  color: #fff;
+.black {
+  color: #000;
 }
 
 .coin__image {
@@ -55,12 +55,12 @@
   .flex-table tbody tr {
     flex-direction: column;
     margin: 1em;
-    border: 1px solid #fff; /*aca*/
+    border: 1px solid #627489; /*aca*/
   }
   .flex-table tbody tr td {
     flex-direction: column;
   }
   .flex-table tbody tr td + td {
-    border-top: 1px solid #fff; /*aca*/
+    border-top: 1px solid #627489; /*aca*/
   }
 }
