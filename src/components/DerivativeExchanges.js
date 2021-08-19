@@ -8,7 +8,7 @@ const useStyles = makeStyles({
   root: {
     width: 200,
     '& .MuiOutlinedInput-input': {
-      color: 'green',
+      color: '#1b2935',
     },
   },
 });

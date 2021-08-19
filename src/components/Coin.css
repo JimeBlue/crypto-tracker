@@ -23,6 +23,10 @@
   background: #ff3a47;
   border: 0.05px solid #ff3a47;
 }
+
+.flex-table tbody {
+  padding-bottom: 0.5rem;
+}
 .flex-table thead tr,
 .flex-table tbody tr {
   display: flex;

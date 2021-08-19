@@ -12,7 +12,7 @@ const InfoBox = ({
   url,
 }) => {
   return (
-    <Card className="profit__card ">
+    <Card className="profit__card">
       <Card.Header>
         <CardColumns className="d-flex d-flex ">
           <div className="card__image-container">
@@ -20,16 +20,14 @@ const InfoBox = ({
           </div>
           <div className="card__title-container">
             <Card.Title className="flex-grow-1 mb-0">{name}</Card.Title>
-            <Card.Text>Established in {yearEstablished}</Card.Text>
+            <Card.Text>{yearEstablished}</Card.Text>
           </div>
         </CardColumns>
       </Card.Header>
       <Card.Body>
         <Card.Text>
           <h6 className="card__heading">Open Interest: {openInterest}</h6>
-          <h6 className="card__heading">
-            Trade Volume in 24h: {tradeVolume24h}
-          </h6>
+          <h6 className="card__heading">Trade Volume 24h: {tradeVolume24h}</h6>
           <Card.Link href={url}>{name}</Card.Link>
           <p className="card__description">{description}</p>
         </Card.Text>
