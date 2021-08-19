@@ -42,7 +42,7 @@ const Home = () => {
         </div>
       </div>
       <table class="flex-table">
-        <thead>
+        <thead className="table-head">
           <tr>
             <th></th>
             <th></th>

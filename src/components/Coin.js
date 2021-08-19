@@ -18,7 +18,7 @@ const Coin = ({
             <td>
               <img src={image} alt="crypto" className="coin__image" />
             </td>
-            <td className="coin-name black">{name}</td>
+            <td className="coin-name blue">{name}</td>
             <td className="coin-symbol black">{symbol}</td>
             <td className="coin-price black"> ${price}</td>
             <td className="coin-volume black">${volume.toLocaleString()}</td>
