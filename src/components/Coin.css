@@ -1,14 +1,27 @@
 .flex-table {
   display: flex;
   flex-direction: column;
-  border: 1px solid #fff; /*aca*/
+  border-top: 0.05px solid #8194a5; /*aca*/
   background: #fff;
-  max-width: 1200px;
+  /* max-width: 1200px; */
   margin: 0 auto;
+}
+
+@media screen and (min-width: 641px) {
+  .flex-table {
+    max-width: 95%;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .flex-table {
+    max-width: 70%;
+  }
 }
 .flex-table thead {
   color: #fff;
-  background: #000;
+  background: #ff3a47;
+  border: 0.05px solid #ff3a47;
 }
 .flex-table thead tr,
 .flex-table tbody tr {
@@ -24,8 +37,13 @@
   padding: 0.5em;
 }
 
-.white {
-  color: #fff;
+.blue {
+  color: #3250d3;
+  font-weight: bold;
+}
+
+.black {
+  color: #000;
 }
 
 .coin__image {
@@ -55,12 +73,12 @@
   .flex-table tbody tr {
     flex-direction: column;
     margin: 1em;
-    border: 1px solid #fff; /*aca*/
+    border: 1px solid #627489; /*aca*/
   }
   .flex-table tbody tr td {
     flex-direction: column;
   }
   .flex-table tbody tr td + td {
-    border-top: 1px solid #fff; /*aca*/
+    border-top: 1px solid #627489; /*aca*/
   }
 }
