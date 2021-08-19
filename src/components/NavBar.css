@@ -1,18 +1,21 @@
 .navbar {
-  background-color: #000;
+  background-color: #3250d3;
+
+  /* box-shadow: 0 12px 21px #7889b6; */
 }
 
 .navbar__brand-right {
-  color: #eee935;
+  color: #fff;
   font-weight: bold;
 }
 
 .navbar__brand-left {
-  color: #00cccc;
+  color: #fff;
   font-weight: bold;
 }
 
 .navbar__link {
-  color: #00cccc;
+  color: #fff;
   font-weight: bold;
+  line-height: 1.2em;
 }

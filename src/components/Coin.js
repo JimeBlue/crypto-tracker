@@ -18,10 +18,10 @@ const Coin = ({
             <td>
               <img src={image} alt="crypto" className="coin__image" />
             </td>
-            <td className="coin-name white">{name}</td>
-            <td className="coin-symbol white">{symbol}</td>
-            <td className="coin-price white"> ${price}</td>
-            <td className="coin-volume white">${volume.toLocaleString()}</td>
+            <td className="coin-name black">{name}</td>
+            <td className="coin-symbol black">{symbol}</td>
+            <td className="coin-price black"> ${price}</td>
+            <td className="coin-volume black">${volume.toLocaleString()}</td>
 
             {priceChange < 0 ? (
               <td className="coin-percent red">{priceChange.toFixed(2)}%</td>
