@@ -1,0 +1,23 @@
+.profit__card {
+  width: 90%;
+}
+
+@media only screen and (min-width: 1024px) {
+  .profit__card {
+    width: 60%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .card__title-container {
+    margin-left: 1rem;
+  }
+}
+
+.card__heading {
+  margin-bottom: 0.8rem;
+}
+
+.card__description {
+  margin-top: 1rem;
+}

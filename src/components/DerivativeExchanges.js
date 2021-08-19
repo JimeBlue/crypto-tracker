@@ -83,6 +83,17 @@ const DerivativeExchanges = () => {
           </Select>
         </FormControl>
       </div>
+      <div className="exchange__info-box">
+        <InfoBox
+          name={exchangeInfo.name}
+          openInterest={exchangeInfo.open_interest_btc}
+          tradeVolume24h={exchangeInfo.trade_volume_24h_btc}
+          image={exchangeInfo.image}
+          yearEstablished={exchangeInfo.year_established}
+          description={exchangeInfo.description}
+          url={exchangeInfo.url}
+        />
+      </div>
     </>
   );
 };
