@@ -1,8 +1,20 @@
 import React, { useState, useEffect } from 'react';
 import { MenuItem, FormControl, Select } from '@material-ui/core';
 import InfoBox from '../components/InfoBox';
+import '../components/DerivativeExchange.css';
+import { makeStyles } from '@material-ui/core/styles';
+
+const useStyles = makeStyles({
+  root: {
+    width: 200,
+    '& .MuiOutlinedInput-input': {
+      color: 'green',
+    },
+  },
+});
 
 const DerivativeExchanges = () => {
+  const classes = useStyles();
   const [exchanges, setExchanges] = useState([]);
   const [exchange, setExchange] = useState('Select Exchange');
   const [exchangeInfo, setExchangeInfo] = useState(
@@ -56,6 +68,28 @@ const DerivativeExchanges = () => {
   return (
     <>
       <div className="exchange__dropdown">
+        <h4 className="exchange__heading">Search Derivative Exchange</h4>
+        <FormControl className="exchange__dropdown" className={classes.root}>
+          <Select
+            variant="outlined"
+            onChange={onExchangeChange}
+            value={exchange}
+            className="exchange__select"
+          >
+            <MenuItem value="Select Exchange">Select Exchange</MenuItem>
+            {exchanges.map((exchange) => (
+              <MenuItem value={exchange.value}>{exchange.name}</MenuItem>
+            ))}
+          </Select>
+        </FormControl>
+      </div>
+    </>
+  );
+};
+export default DerivativeExchanges;
+
+/*
+<div className="exchange__dropdown">
         <h4>Search Derivative Exchange</h4>
         <FormControl className="exchange__dropdown">
           <Select
@@ -81,7 +115,4 @@ const DerivativeExchanges = () => {
           url={exchangeInfo.url}
         />
       </div>
-    </>
-  );
-};
-export default DerivativeExchanges;
+ */
