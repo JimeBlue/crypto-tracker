@@ -14,7 +14,6 @@ const Profitability = () => {
         'https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=10&page=1&sparkline=false'
       )
       .then((res) => {
-        /*setProfit(res.data);*/
         const profitData = res.data;
         setBarData({
           labels: profitData.map((crypto) => crypto.name),
@@ -67,11 +66,14 @@ const Profitability = () => {
   }, []);
 
   return (
-    <Card className="profit__card">
-      <Card.Body>
-        <Card.Title>Profitability</Card.Title>
+    <div class="profitability">
+      <Line data={lineData} height={250} />
+    </div>
+  );
+};
+export default Profitability;
 
-        <Bar
+/*<Bar
           className="profit__bar"
           data={barData}
           options={{
@@ -86,26 +88,4 @@ const Profitability = () => {
               },
             },
           }}
-        />
-
-        <Line
-          className="profit__line"
-          data={lineData}
-          options={{
-            plugins: {
-              title: {
-                display: true,
-                text: 'Cryptocurrency Price Change Percentage in 24h',
-              },
-              legend: {
-                display: true,
-                position: 'bottom',
-              },
-            },
-          }}
-        />
-      </Card.Body>
-    </Card>
-  );
-};
-export default Profitability;
+        /> */

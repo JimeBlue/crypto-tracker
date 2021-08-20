@@ -1,30 +1,5 @@
-.profit__card {
-  min-width: 18rem;
+.profitability {
   margin: 0 auto;
-  border: 0;
-}
-
-.profit__bar,
-.profit__line {
-  padding: 1rem;
-}
-/*
-style={{ minWidth: '18rem', maxWidth: '1200px' }}
-*/
-
-@media only screen and (min-width: 768px) {
-  .profit__bar,
-  .profit__line {
-    padding: 2rem;
-  }
-}
-
-@media only screen and (min-width: 1024px) {
-  .profit__card {
-    max-width: 1200px;
-  }
-  .profit__bar,
-  .profit__line {
-    padding: 4rem;
-  }
+  max-width: 1200px;
+  padding: 3rem;
 }
