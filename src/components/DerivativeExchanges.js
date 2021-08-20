@@ -86,7 +86,7 @@ const DerivativeExchanges = () => {
       <div className="exchange__info-box">
         <InfoBox
           name={exchangeInfo.name}
-          openInterest={exchangeInfo.open_interest_btc}
+          perpPairs={exchangeInfo.number_of_perpetual_pairs}
           tradeVolume24h={exchangeInfo.trade_volume_24h_btc}
           image={exchangeInfo.image}
           yearEstablished={exchangeInfo.year_established}

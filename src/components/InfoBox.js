@@ -4,7 +4,7 @@ import './InfoBox.css';
 
 const InfoBox = ({
   name,
-  openInterest,
+  perpPairs,
   tradeVolume24h,
   image,
   yearEstablished,
@@ -26,7 +26,9 @@ const InfoBox = ({
       </Card.Header>
       <Card.Body>
         <Card.Text>
-          <h6 className="card__heading">Open Interest: {openInterest}</h6>
+          <h6 className="card__heading">
+            Number of Perpetual Pairs: {perpPairs}
+          </h6>
           <h6 className="card__heading">Trade Volume 24h: {tradeVolume24h}</h6>
           <Card.Link href={url}>{name}</Card.Link>
           <p className="card__description">{description}</p>
