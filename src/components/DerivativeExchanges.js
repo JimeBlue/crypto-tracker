@@ -68,7 +68,7 @@ const DerivativeExchanges = () => {
   return (
     <>
       <div className="exchange__dropdown">
-        <h4 className="exchange__heading">Search Derivative Exchange</h4>
+        <h4 className="exchange__heading">Select Derivative Exchange</h4>
         <FormControl className="exchange__dropdown" className={classes.root}>
           <Select
             variant="outlined"
