@@ -1,5 +1,58 @@
-.profitability {
+.charts {
   margin: 0 auto;
-  max-width: 1200px;
-  padding: 3rem;
+  padding: 2rem 1rem 1rem 1rem;
+  height: 100%;
 }
+
+@media only screen and (min-width: 768px) {
+  .charts {
+    max-width: 90%;
+    padding: 2rem 0 0 0;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .charts {
+    max-width: 70%;
+    padding: 2rem 0 0 0;
+    height: 150px;
+  }
+}
+
+.line-chart {
+  margin-top: 1rem;
+}
+
+.bar-chart {
+  margin-top: 3rem;
+}
+
+@media only screen and (min-width: 768px) {
+  .line-chart {
+    margin-top: 2rem;
+  }
+
+  .bar-chart {
+    margin-top: 5rem;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .line-chart {
+    margin-top: 2rem;
+  }
+
+  .bar-chart__contianer {
+    padding-top: 4rem;
+    padding-bottom: 5rem;
+  }
+}
+
+/* .line-chart {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.bar-chart {
+  margin-top: 5rem;
+} */

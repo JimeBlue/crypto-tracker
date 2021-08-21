@@ -41,7 +41,7 @@ const Profitability = () => {
           labels: profitData.map((crypto) => crypto.name),
           datasets: [
             {
-              label: 'Price Change Percentage in 24h',
+              label: 'Price Change Percentage 24h',
               data: profitData.map(
                 (crypto) => crypto.price_change_percentage_24h
               ),
@@ -66,26 +66,14 @@ const Profitability = () => {
   }, []);
 
   return (
-    <div class="profitability">
-      <Line data={lineData} height={250} />
+    <div class="charts">
+      <div>
+        <Line data={lineData} className="line-chart" />
+      </div>
+      <div className="bar-chart__contianer">
+        <Bar data={barData} className="bar-chart" />
+      </div>
     </div>
   );
 };
 export default Profitability;
-
-/*<Bar
-          className="profit__bar"
-          data={barData}
-          options={{
-            plugins: {
-              title: {
-                display: true,
-                text: 'Cryptocurrency Market Capital',
-              },
-              legend: {
-                display: true,
-                position: 'bottom',
-              },
-            },
-          }}
-        /> */
