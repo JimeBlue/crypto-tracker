@@ -17,8 +17,7 @@ const NavBar = () => {
                 height="30"
                 className="d-inline-block align-top"
               />{' '}
-              <span className="navbar__brand-right">Crypto</span>{' '}
-              <span className="navbar__brand-left">Tracker</span>
+              <span className="navbar__brand">Crypto Tracker</span>{' '}
             </Navbar.Brand>
           </Nav>
         </LinkContainer>
