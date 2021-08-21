@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import { Card, CardColumns } from 'react-bootstrap';
 import './InfoBox.css';
 import numeral from 'numeral';
@@ -41,22 +41,3 @@ const InfoBox = ({
   );
 };
 export default InfoBox;
-
-/*  IN RETURN: {p}{l}-{2}-{sm}
-<Card className="profit__card">
-      <Card.Body>
-        <Card.Img src={image} />
-        <Card.Title>{name}</Card.Title>
-        <Card.Text>Open Interest{openInterest}</Card.Text>
-        <Card.Text> Trade Volume 24h{tradeVolume24h}</Card.Text>
-        <Card.Text>Year Established {yearEstablished}</Card.Text>
-        <Card.Text>Description {description}</Card.Text>
-        <Card.Link href={url}>url</Card.Link>
-      </Card.Body>
-    </Card>
-
-
-
-    '000000,0%'
-
-*/
