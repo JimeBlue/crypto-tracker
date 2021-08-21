@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import Card from 'react-bootstrap/Card';
 import { Bar, Line } from 'react-chartjs-2';
 import './Profitability.css';
 
@@ -22,12 +21,12 @@ const Profitability = () => {
               label: 'Market Capitalization in USD',
               data: profitData.map((crypto) => crypto.market_cap),
               backgroundColor: [
-                '#ffbb11',
-                '#ecf0f1',
+                '#2074ef',
+                '#ff3a47',
                 '#50AF95',
                 '#f3ba2f',
                 '#2a71d0',
-                '#ffbb11',
+                '#ff3a47',
                 '#ecf0f1',
                 '#50AF95',
                 '#f3ba2f',
@@ -46,8 +45,8 @@ const Profitability = () => {
                 (crypto) => crypto.price_change_percentage_24h
               ),
               backgroundColor: [
-                '#ffbb11',
-                '#ecf0f1',
+                '#ff3a47',
+                '#2a71d0',
                 '#50AF95',
                 '#f3ba2f',
                 '#2a71d0',
