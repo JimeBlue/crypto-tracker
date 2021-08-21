@@ -7,17 +7,21 @@ const NavBar = () => {
   return (
     <div>
       <Navbar expand="lg" className="navbar" variant="dark">
-        <Navbar.Brand href="#home">
-          <img
-            alt=""
-            src="crypto-logo.svg"
-            width="30"
-            height="30"
-            className="d-inline-block align-top"
-          />{' '}
-          <span className="navbar__brand-right">Crypto</span>{' '}
-          <span className="navbar__brand-left">Tracker</span>
-        </Navbar.Brand>
+        <LinkContainer to="/">
+          <Nav class="Link">
+            <Navbar.Brand href="#home">
+              <img
+                alt=""
+                src="crypto-logo.svg"
+                width="30"
+                height="30"
+                className="d-inline-block align-top"
+              />{' '}
+              <span className="navbar__brand-right">Crypto</span>{' '}
+              <span className="navbar__brand-left">Tracker</span>
+            </Navbar.Brand>
+          </Nav>
+        </LinkContainer>
         <Navbar.Toggle
           aria-controls="basic-navbar-nav"
           className="navbar__toggle"
