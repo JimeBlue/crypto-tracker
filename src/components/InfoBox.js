@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Card, CardColumns } from 'react-bootstrap';
 import './InfoBox.css';
+import numeral from 'numeral';
 
 const InfoBox = ({
   name,
@@ -29,7 +30,9 @@ const InfoBox = ({
           <h6 className="card__heading">
             Number of Perpetual Pairs: {perpPairs}
           </h6>
-          <h6 className="card__heading">Trade Volume 24h: {tradeVolume24h}</h6>
+          <h6 className="card__heading">
+            Trade Volume 24h: {numeral(tradeVolume24h).format('$0,0')}
+          </h6>
           <Card.Link href={url}>{name}</Card.Link>
           <p className="card__description">{description}</p>
         </Card.Text>
@@ -52,5 +55,8 @@ export default InfoBox;
       </Card.Body>
     </Card>
 
+
+
+    '000000,0%'
 
 */
