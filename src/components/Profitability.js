@@ -14,7 +14,6 @@ const Profitability = () => {
         'https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=10&page=1&sparkline=false'
       )
       .then((res) => {
-        /*setProfit(res.data);*/
         const profitData = res.data;
         setBarData({
           labels: profitData.map((crypto) => crypto.name),
@@ -42,7 +41,7 @@ const Profitability = () => {
           labels: profitData.map((crypto) => crypto.name),
           datasets: [
             {
-              label: 'Price Change Percentage in 24h',
+              label: 'Price Change Percentage 24h',
               data: profitData.map(
                 (crypto) => crypto.price_change_percentage_24h
               ),
@@ -67,45 +66,14 @@ const Profitability = () => {
   }, []);
 
   return (
-    <Card className="profit__card">
-      <Card.Body>
-        <Card.Title>Profitability</Card.Title>
-
-        <Bar
-          className="profit__bar"
-          data={barData}
-          options={{
-            plugins: {
-              title: {
-                display: true,
-                text: 'Cryptocurrency Market Capital',
-              },
-              legend: {
-                display: true,
-                position: 'bottom',
-              },
-            },
-          }}
-        />
-
-        <Line
-          className="profit__line"
-          data={lineData}
-          options={{
-            plugins: {
-              title: {
-                display: true,
-                text: 'Cryptocurrency Price Change Percentage in 24h',
-              },
-              legend: {
-                display: true,
-                position: 'bottom',
-              },
-            },
-          }}
-        />
-      </Card.Body>
-    </Card>
+    <div class="charts">
+      <div>
+        <Line data={lineData} className="line-chart" />
+      </div>
+      <div className="bar-chart__contianer">
+        <Bar data={barData} className="bar-chart" />
+      </div>
+    </div>
   );
 };
 export default Profitability;
