@@ -20,7 +20,7 @@ const Coin = ({
             </td>
             <td className="coin-name blue">{name}</td>
             <td className="coin-symbol black">{symbol}</td>
-            <td className="coin-price black"> ${price}</td>
+            <td className="coin-price black"> ${price.toLocaleString()}</td>
             <td className="coin-volume black">${volume.toLocaleString()}</td>
 
             {priceChange < 0 ? (
