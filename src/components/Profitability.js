@@ -65,7 +65,8 @@ const Profitability = () => {
   }, []);
 
   return (
-    <div class="charts">
+    <div className="charts">
+      <h3 className="charts__heading">Top 10 Cryptocurrency Profitability</h3>
       <div>
         <Line data={lineData} className="line-chart" />
       </div>
