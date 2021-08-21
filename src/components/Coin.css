@@ -1,10 +1,12 @@
 .flex-table {
   display: flex;
   flex-direction: column;
-  border-top: 0.05px solid #8194a5; /*aca*/
   background: #fff;
-  /* max-width: 1200px; */
   margin: 0 auto;
+}
+
+.flex-table tbody tr {
+  border-bottom: 1px solid #627489; /*aca*/
 }
 
 @media screen and (min-width: 641px) {
