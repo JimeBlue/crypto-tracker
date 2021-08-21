@@ -1,17 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
 .navbar {
   background-color: #3250d3;
-
-  /* box-shadow: 0 12px 21px #7889b6; */
+  letter-spacing: 0.3px;
 }
 
-.navbar__brand-right {
+.navbar__brand {
   color: #fff;
   font-weight: bold;
-}
-
-.navbar__brand-left {
-  color: #fff;
-  font-weight: bold;
+  font-family: 'Ubuntu', sans-serif;
 }
 
 .navbar__link {
