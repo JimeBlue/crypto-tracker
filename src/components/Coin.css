@@ -6,7 +6,7 @@
 }
 
 .flex-table tbody tr {
-  border-bottom: 1px solid #627489; /*aca*/
+  border-bottom: 1px solid #627489;
 }
 
 @media screen and (min-width: 641px) {
@@ -34,7 +34,7 @@
   display: flex;
 }
 .flex-table tbody tr + tr {
-  border-top: 1px solid #fff; /*aca*/
+  border-top: 1px solid #fff;
 }
 .flex-table thead tr th,
 .flex-table tbody tr td {
@@ -79,12 +79,12 @@
   .flex-table tbody tr {
     flex-direction: column;
     margin: 1em;
-    border: 1px solid #627489; /*aca*/
+    border: 1px solid #627489;
   }
   .flex-table tbody tr td {
     flex-direction: column;
   }
   .flex-table tbody tr td + td {
-    border-top: 1px solid #627489; /*aca*/
+    border-top: 1px solid #627489;
   }
 }

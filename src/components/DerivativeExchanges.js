@@ -17,9 +17,7 @@ const DerivativeExchanges = () => {
   const classes = useStyles();
   const [exchanges, setExchanges] = useState([]);
   const [exchange, setExchange] = useState('Select Exchange');
-  const [exchangeInfo, setExchangeInfo] = useState(
-    {}
-  ); /*for indivudual derivative exchange*/
+  const [exchangeInfo, setExchangeInfo] = useState({});
 
   useEffect(() => {
     const getexchangesData = async () => {
@@ -38,8 +36,6 @@ const DerivativeExchanges = () => {
     };
     getexchangesData();
   }, []);
-
-  /* for the data to load when dropdown is on Select Exchange*/
 
   useEffect(() => {
     fetch('https://api.coingecko.com/api/v3/derivatives/exchanges/aax_futures')
@@ -98,32 +94,3 @@ const DerivativeExchanges = () => {
   );
 };
 export default DerivativeExchanges;
-
-/*
-<div className="exchange__dropdown">
-        <h4>Search Derivative Exchange</h4>
-        <FormControl className="exchange__dropdown">
-          <Select
-            variant="outlined"
-            onChange={onExchangeChange}
-            value={exchange}
-          >
-            <MenuItem value="Select Exchange">Select Exchange</MenuItem>
-            {exchanges.map((exchange) => (
-              <MenuItem value={exchange.value}>{exchange.name}</MenuItem>
-            ))}
-          </Select>
-        </FormControl>
-      </div>
-      <div className="exchange__info-box">
-        <InfoBox
-          name={exchangeInfo.name}
-          openInterest={exchangeInfo.open_interest_btc}
-          tradeVolume24h={exchangeInfo.trade_volume_24h_btc}
-          image={exchangeInfo.image}
-          yearEstablished={exchangeInfo.year_established}
-          description={exchangeInfo.description}
-          url={exchangeInfo.url}
-        />
-      </div>
- */
