@@ -6,7 +6,6 @@ Cryptocurrency tracker. Final project for the Applied JavaScript I course, part 
 ![crypto-tracker](https://user-images.githubusercontent.com/84801660/145076074-e79f6136-6c6d-4f7e-a377-c4473335e71f.JPG)
 
 <br />
-<br />
 <p align="center">
   <img src="https://user-images.githubusercontent.com/84801660/145076168-4c9e7126-d305-417b-b73d-0fbcc4e1724e.JPG" width="300" height="400">
 </p>
@@ -34,12 +33,14 @@ Users should be able to:
 - Axios
 
 ### What I learned
-- How to integrate data from a public API into a webpage <a href="https://github.com/JimeBlue/Compared-to-the-Universe/blob/master/css/style.css#L83-L88"> example code </a>
-- React Router 
-- useEffect and useState hooks
-- How to Use Fetch with async/await
-- How to use axios to get data from api
-- How to build a directory architecture
+- How to integrate data from a public API into a webpage <a href="https://github.com/JimeBlue/crypto-tracker/blob/bba43c607df1ac66b838384737a5531b94259d46/src/components/Home.js#L14"> example code </a>
+- React Router <a href="https://github.com/JimeBlue/crypto-tracker/blob/bba43c607df1ac66b838384737a5531b94259d46/src/App.js#L11-L20"> example code </a>
+- useEffect and useState hooks 
+<br /><a href="https://github.com/JimeBlue/crypto-tracker/blob/bba43c607df1ac66b838384737a5531b94259d46/src/components/DerivativeExchanges.js#L40-L46"> useEffect example code </a> 
+<br /> <a href="https://github.com/JimeBlue/crypto-tracker/blob/bba43c607df1ac66b838384737a5531b94259d46/src/components/DerivativeExchanges.js#L18"> useState example code </a>
+- How to Use Fetch with async/await <a href="https://github.com/JimeBlue/crypto-tracker/blob/bba43c607df1ac66b838384737a5531b94259d46/src/components/DerivativeExchanges.js#L22-L38"> example code </a>
+- How to use axios to get data from api <a href="https://github.com/JimeBlue/crypto-tracker/blob/bba43c607df1ac66b838384737a5531b94259d46/src/components/Home.js#L11-L20"> example code </a>
+- How to build a directory architecture 
 
 
 
