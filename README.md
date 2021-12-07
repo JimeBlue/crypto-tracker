@@ -1,6 +1,28 @@
-# Getting Started with Create React App
+# Crypto Tracker
+
+Cryptocurrency tracker. Final project for the Applied JavaScript I course, part of the <a href="https://extension.ucsd.edu/courses-and-programs/front-end-development"> Front End Development Certificate </a> delivered by <a href="https://ucsd.edu/"> the University of California San Diego Extension </a>
+
+#### Deployed live on <a href="https://blue-crytotracker.netlify.app/"> https://blue-crytotracker.netlify.app/</a> . Check it out!
+
+## The project 
+
+Users should be able to:
+
+- View the optimal layout for the site depending on their device's screen size
+- Search for a crypto currency using an input field
+- Navigate the site using links
+- Visualize profitability data by means of charts and/or graphs
+- Select a derivative exchange using a dropdown
+
+## My Process
+
+### Built with
+### What I learned
+
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
 
 ## Available Scripts
 
