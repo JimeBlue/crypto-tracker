@@ -15,7 +15,7 @@ Cryptocurrency tracker. Final project for the Applied JavaScript I course, part 
 Users should be able to:
 
 - View the optimal layout for the site depending on their device's screen size
-- Search for a crypto currency using an input field
+- Search for a cryptocurrency using an input field
 - Navigate the site using links
 - Visualize profitability data by means of charts and/or graphs
 - Select a derivative exchange using a dropdown
