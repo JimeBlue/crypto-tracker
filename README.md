@@ -33,13 +33,11 @@ Users should be able to:
 - Axios
 
 ### What I learned
-- How to integrate data from a public API into a webpage <a href="https://github.com/JimeBlue/crypto-tracker/blob/bba43c607df1ac66b838384737a5531b94259d46/src/components/Home.js#L14"> example code </a>
-- React Router <a href="https://github.com/JimeBlue/crypto-tracker/blob/bba43c607df1ac66b838384737a5531b94259d46/src/App.js#L11-L20"> example code </a>
-- useEffect and useState hooks 
-<br /><a href="https://github.com/JimeBlue/crypto-tracker/blob/bba43c607df1ac66b838384737a5531b94259d46/src/components/DerivativeExchanges.js#L40-L46"> useEffect example code </a> 
-<br /> <a href="https://github.com/JimeBlue/crypto-tracker/blob/bba43c607df1ac66b838384737a5531b94259d46/src/components/DerivativeExchanges.js#L18"> useState example code </a>
-- How to use Fetch with async/await <a href="https://github.com/JimeBlue/crypto-tracker/blob/bba43c607df1ac66b838384737a5531b94259d46/src/components/DerivativeExchanges.js#L22-L38"> example code </a>
-- How to use axios to get data from api <a href="https://github.com/JimeBlue/crypto-tracker/blob/bba43c607df1ac66b838384737a5531b94259d46/src/components/Home.js#L11-L20"> example code </a>
+-  <a href="https://github.com/JimeBlue/crypto-tracker/blob/bba43c607df1ac66b838384737a5531b94259d46/src/components/Home.js#L14"> How to integrate data from a public API into a webpage </a>
+- <a href="https://github.com/JimeBlue/crypto-tracker/blob/bba43c607df1ac66b838384737a5531b94259d46/src/App.js#L11-L20"> React Router </a>
+- <a href="https://github.com/JimeBlue/crypto-tracker/blob/bba43c607df1ac66b838384737a5531b94259d46/src/components/DerivativeExchanges.js#L40-L46"> useEffect and </a> <br /> <a href="https://github.com/JimeBlue/crypto-tracker/blob/bba43c607df1ac66b838384737a5531b94259d46/src/components/DerivativeExchanges.js#L18"> useState hooks  </a>
+-  <a href="https://github.com/JimeBlue/crypto-tracker/blob/bba43c607df1ac66b838384737a5531b94259d46/src/components/DerivativeExchanges.js#L22-L38"> How to use Fetch with async/awai </a>
+-  <a href="https://github.com/JimeBlue/crypto-tracker/blob/bba43c607df1ac66b838384737a5531b94259d46/src/components/Home.js#L11-L20"> How to use axios to get data from api </a>
 - How to build a directory architecture 
 
 
