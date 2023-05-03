@@ -2,7 +2,7 @@
 
 Cryptocurrency tracker. Final project for the Applied JavaScript I course, part of the <a href="https://extension.ucsd.edu/courses-and-programs/front-end-development"> Front End Development Certificate </a> delivered by <a href="https://ucsd.edu/"> the University of California San Diego Extension </a>
 
-#### Deployed live on <a href="https://blue-crytotracker.netlify.app/"> https://blue-crytotracker.netlify.app/</a> . Check it out!
+#### Live on <a href="https://blue-crytotracker.netlify.app/"> https://blue-crytotracker.netlify.app/</a> . Check it out!
 ![crypto-tracker](https://user-images.githubusercontent.com/84801660/145076074-e79f6136-6c6d-4f7e-a377-c4473335e71f.JPG)
 
 <br />
